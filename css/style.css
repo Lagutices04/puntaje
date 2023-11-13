@@ -1,0 +1,31 @@
+body {
+    background-color: rgb(141, 219, 255);
+}
+
+.puntaje {
+    margin-top: 100px;
+    display: flex;
+    /* Para que las estrellas se alineen */
+    justify-content: center;
+    /* Div centrado respecto al contenedor de puntaje */
+    align-items: center;
+}
+
+.item {
+    background-color: blanchedalmond;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    clip-path: url("../img/estrella.svg");
+
+    /* SVG es un vector solo tiene parámetros de su forma
+       Haga una máscara y que tome forma de ese vector */
+}
+
+.item.selec {
+    background-color: rgb(247, 101, 101);
+    /* Se crea clase adicional que está asociada con el item */
+}
+
+
+
